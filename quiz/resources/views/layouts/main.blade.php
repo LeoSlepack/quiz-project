@@ -26,13 +26,10 @@
     <div class="actions d-flex justify-content-center">
         <a href="#" class="btn btn-primary">Editar Usuário</a>
         <a href="#" class="btn btn-success">Criar Quiz</a>
-        <a 
-        href="#" 
-        class="btn btn-primary"
-        >
-            <i class="fa fa-search"></i> Consultar por um Quiz
-        </a>
     </div>
+    <form action="/" method="GET">
+        <input type="text" id="search" name="search" class="form-control" placeholder="pesquise aqui por um quiz">
+    </form>
 
 
     <table class="table table-striped">
