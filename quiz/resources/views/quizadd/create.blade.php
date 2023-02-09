@@ -18,14 +18,41 @@
     <!--Css -->
 </head>
 <body>
-    <h1>Novo Quiz</h1>
 
-    <form id="form-quiz" action="{{ route('quizzes.store') }}" method="post">
-        @csrf
-        <input class="form-control" type="text" name="title-quiz" id="title-quiz" placeholder="Qual o nome do seu quiz">
-        <input class="form-control" type="text" name="question" id="question" placeholder="Digite sua pergunta">
-        <button class="btn btn-primary" type="submit">Criar quiz</button>
-    </form>
+    <div class="container">
+        <h1>Crie o seu Quiz</h1>
+        <form action="/quizadd" id="form-quiz" method="post">
+            @csrf
+            <div class="form-group">
+                <label for="title">Título do Quiz:</label>
+                <input type="text" class="form-control" id="title" name="title" placeholder="Nome do seu Quiz" required>
+            </div>
+            <div class="form-group">
+                <label for="category">Categoria:</label>
+                <select name="category" id="category" class="form-control" required>
+                    <option value="0">Conhecimentos Gerais</option>
+                    <option value="1">Animais</option>
+                    <option value="2">Futebol</option>
+                    <option value="3">Geografia</option>
+                    <option value="4">Filmes e Series</option>
+                    <option value="5">Historia</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="mult">Terá mais de uma resposta correta nas perguntas do seu Quiz</label>
+                <select name="mult" id="mult" class="form-control" required>
+                    <option value="0">Não</option>
+                    <option value="1">Sim</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question">Pergunta:</label>
+                <input type="text" class="form-control" id="question" name="question" placeholder="Digite sua pergunta" required>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Criar quiz">
+            <a href="'/home" class="btn btn-secondary">Voltar a página principal</a>
+        </form>
+    </div>
 
 </body>
 </html>
