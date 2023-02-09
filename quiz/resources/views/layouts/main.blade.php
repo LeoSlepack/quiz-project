@@ -26,8 +26,8 @@
     
     <!--Botões do projeto-->
     <div class="actions d-flex justify-content-center">
-        <a href="/edituser" class="btn btn-primary">Editar Usuário</a>
-        <a href="/createquiz" class="btn btn-success">Criar Quiz</a>
+        <a href="/users" class="btn btn-primary">Editar Usuário</a>
+        <a href="/quiz/create" class="btn btn-success">Criar Quiz</a>
     </div>
     <form action="/" method="GET">
         <input type="text" id="search" name="search" class="form-control" placeholder="pesquise aqui por um quiz">
