@@ -2,24 +2,31 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
+//Rota que retorna a página de login
 Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
-
+//Rota que retorna a main principal
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+//Rota que retorna a view de edição de usuário
+Route::get('/edituser', function () {
+    return view('edituser');
+});
 
+//Rota para criação de quiz
+Route::get('/createquiz', function () {
+    return view('createquiz');
+});
 
+//Rota para jogar quiz
+Route::get('/playquiz', function () {
+    return view('playquiz');
+});
+
+//Rota para jogar quiz
+Route::get('/editquiz', function () {
+    return view('editquiz');
+});
