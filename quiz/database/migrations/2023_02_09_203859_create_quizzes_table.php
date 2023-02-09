@@ -13,8 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('quizzes', function (Blueprint $table) {
+        Schema::create('quizzeinf', function (Blueprint $table) {
             $table->id();
+            $table->string('title', 100);
+            $table->date('created_at');
+            $table->string('Category', 20);
+            $table->string('mult');
+            $table->date('update_at');
+            $table->string('question');
             $table->timestamps();
         });
     }
@@ -26,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('quizzes');
+        Schema::dropIfExists('quizzeinf');
     }
 };
