@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('title', 100);
             $table->date('created_at');
-            $table->string('Category', 20);
+            $table->string('category', 20);
             $table->string('mult');
             $table->date('update_at');
             $table->string('question');
