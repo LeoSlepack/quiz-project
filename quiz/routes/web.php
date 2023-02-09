@@ -11,20 +11,8 @@ Route::get('/', function () {
 });
 
 //Rota criação de quiz (controller)
-Route::get('/quiz/create', [QuizController::class, 'create']);
+Route::get('/quiz/create', [QuizController::class, 'create'])->name('quizzes.create');
+Route::post('/quiz',[QuizController::class, 'store'])->name('quizzes.store');
 
 //Rota que retorna a main principal
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-//Rota que retorna a view de edição de usuário
-Route::get('/users', [UserController::class, 'index']);
-
-//Rota para jogar quiz
-Route::get('/playquiz', function () {
-    return view('playquiz');
-});
-
-//Rota para jogar quiz
-Route::get('/editquiz', function () {
-    return view('editquiz');
-});
