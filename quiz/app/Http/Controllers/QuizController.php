@@ -12,7 +12,15 @@ class QuizController extends Controller
     }
 
     public function create() {
-        return view('quizadd.quizcreate');
+        return view('quizadd.create');
+    }
+
+    public function store(Request $request) {
+        
+        dd($request->only([
+            'title-quiz', 'question'
+        ]));
+
     }
 
 }

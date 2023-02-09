@@ -26,7 +26,7 @@
     
     <!--Botões do projeto-->
     <div class="actions d-flex justify-content-center">
-        <a href="/users" class="btn btn-primary">Editar Usuário</a>
+        <a href="#" class="btn btn-primary">Editar Usuário</a>
         <a href="/quiz/create" class="btn btn-success">Criar Quiz</a>
     </div>
     <form action="/" method="GET">
@@ -50,8 +50,8 @@
             <td>15 de janeiro de 2022</td>
             <td>Geografia</td>
             <td>
-                <a href="/playquiz"><button type="button" class="btn btn-primary btn-sm">Jogar</button></a>
-                <a href="/editquiz"><button type="button" class="btn btn-success btn-sm">Editar</button></a>
+                <a href="#"><button type="button" class="btn btn-primary btn-sm">Jogar</button></a>
+                <a href="#"><button type="button" class="btn btn-success btn-sm">Editar</button></a>
                 <button type="button" class="btn btn-danger btn-sm">Excluir</button>
             </td>
             </tr>
@@ -61,8 +61,8 @@
             <td>10 de março de 2022</td>
             <td>Literatura</td>
             <td>
-                <a href="/playquiz"><button type="button" class="btn btn-primary btn-sm">Jogar</button></a>
-                <a href="/editquiz"><button type="button" class="btn btn-success btn-sm">Editar</button></a>
+                <a href="#"><button type="button" class="btn btn-primary btn-sm">Jogar</button></a>
+                <a href="#"><button type="button" class="btn btn-success btn-sm">Editar</button></a>
                 <button type="button" class="btn btn-danger btn-sm">Excluir</button>
             </td>
             </tr>
@@ -72,8 +72,8 @@
             <td>20 de maio de 2022</td>
             <td>História</td>
             <td>
-                <a href="/playquiz"><button type="button" class="btn btn-primary btn-sm">Jogar</button></a>
-                <a href="/editquiz"><button type="button" class="btn btn-success btn-sm">Editar</button></a>
+                <a href="#"><button type="button" class="btn btn-primary btn-sm">Jogar</button></a>
+                <a href="#"><button type="button" class="btn btn-success btn-sm">Editar</button></a>
                 <button type="button" class="btn btn-danger btn-sm">Excluir</button>
             </td>
             </tr>
@@ -83,8 +83,8 @@
             <td>1 de julho de 2022</td>
             <td>Ciência</td>
             <td>
-                <a href="/playquiz"><button type="button" class="btn btn-primary btn-sm">Jogar</button></a>
-                <a href="/editquiz"><button type="button" class="btn btn-success btn-sm">Editar</button></a>
+                <a href="#"><button type="button" class="btn btn-primary btn-sm">Jogar</button></a>
+                <a href="#"><button type="button" class="btn btn-success btn-sm">Editar</button></a>
                 <button type="button" class="btn btn-danger btn-sm">Excluir</button>
             </td>
             </tr>
