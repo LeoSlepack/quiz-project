@@ -21,17 +21,19 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    @yield('content')
 
+    @yield('content')
+    
+    <!--Botões do projeto-->
     <div class="actions d-flex justify-content-center">
-        <a href="#" class="btn btn-primary">Editar Usuário</a>
-        <a href="#" class="btn btn-success">Criar Quiz</a>
+        <a href="/edituser" class="btn btn-primary">Editar Usuário</a>
+        <a href="/createquiz" class="btn btn-success">Criar Quiz</a>
     </div>
     <form action="/" method="GET">
         <input type="text" id="search" name="search" class="form-control" placeholder="pesquise aqui por um quiz">
     </form>
 
-
+    <!--Tabela de armazenamento de quiz-->
     <table class="table table-striped">
         <thead>
             <tr>
@@ -48,8 +50,8 @@
             <td>15 de janeiro de 2022</td>
             <td>Geografia</td>
             <td>
-                <button type="button" class="btn btn-primary btn-sm">Jogar</button>
-                <button type="button" class="btn btn-success btn-sm">Editar</button>
+                <a href="/playquiz"><button type="button" class="btn btn-primary btn-sm">Jogar</button></a>
+                <a href="/editquiz"><button type="button" class="btn btn-success btn-sm">Editar</button></a>
                 <button type="button" class="btn btn-danger btn-sm">Excluir</button>
             </td>
             </tr>
@@ -59,8 +61,8 @@
             <td>10 de março de 2022</td>
             <td>Literatura</td>
             <td>
-                <button type="button" class="btn btn-primary btn-sm">Jogar</button>
-                <button type="button" class="btn btn-success btn-sm">Editar</button>
+                <a href="/playquiz"><button type="button" class="btn btn-primary btn-sm">Jogar</button></a>
+                <a href="/editquiz"><button type="button" class="btn btn-success btn-sm">Editar</button></a>
                 <button type="button" class="btn btn-danger btn-sm">Excluir</button>
             </td>
             </tr>
@@ -70,8 +72,8 @@
             <td>20 de maio de 2022</td>
             <td>História</td>
             <td>
-                <button type="button" class="btn btn-primary btn-sm">Jogar</button>
-                <button type="button" class="btn btn-success btn-sm">Editar</button>
+                <a href="/playquiz"><button type="button" class="btn btn-primary btn-sm">Jogar</button></a>
+                <a href="/editquiz"><button type="button" class="btn btn-success btn-sm">Editar</button></a>
                 <button type="button" class="btn btn-danger btn-sm">Excluir</button>
             </td>
             </tr>
@@ -81,23 +83,21 @@
             <td>1 de julho de 2022</td>
             <td>Ciência</td>
             <td>
-                <button type="button" class="btn btn-primary btn-sm">Jogar</button>
-                <button type="button" class="btn btn-success btn-sm">Editar</button>
+                <a href="/playquiz"><button type="button" class="btn btn-primary btn-sm">Jogar</button></a>
+                <a href="/editquiz"><button type="button" class="btn btn-success btn-sm">Editar</button></a>
                 <button type="button" class="btn btn-danger btn-sm">Excluir</button>
             </td>
             </tr>
         </tbody>
     </table>
 
-
+    <!--Footer armazenando código datatables-->
     <footer>
-        <p>Quiz com Laravel, projeto teste</p>
         <script>
             $(document).ready(function() {
                 $('#table-quiz').DataTable();
             });
         </script>
-
     </footer>
 </body>
 </html>
